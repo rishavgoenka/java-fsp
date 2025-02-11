@@ -1,10 +1,20 @@
 package com.fsp.fsp;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class StudentAddress {
     private String streetNo;
     private String city;
     private String state;
+    private String country;
 
+    public String getCountry() {
+        return country;
+    }
+    public void setCountry(String country) {
+        this.country = country;
+    }
     public String getState() {
         return state;
     }
