@@ -15,7 +15,7 @@ public class FspApplication {
         student.setStudentName("Promod");
         student.setStudentRollNo("101");
 
-        // Setting address details via injected StudentAddress bean
+        // Setting address details via injected StudentAddress beanbean
         student.getAddress().setCity("California");
         student.getAddress().setCountry("USA");
         student.getAddress().setState("Texas");
