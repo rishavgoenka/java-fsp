@@ -1,11 +1,23 @@
 package com.fsp.fsp;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Student {
     private String studentRollNo;
     private String studentName;
+
+    @Autowired
+    private StudentAddress address;
+
+    public StudentAddress getAddress() {
+        return address;
+    }
+
+    public void setAddress(StudentAddress address) {
+        this.address = address;
+    }
 
     public String getStudentName() {
         return studentName;
